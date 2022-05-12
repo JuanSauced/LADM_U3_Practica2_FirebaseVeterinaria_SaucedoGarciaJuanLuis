@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ActualizarMascota.ActualizarMascotaFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvNombreMas"/>
+
+    <EditText
+        android:id="@+id/etNombreMas"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombreMas"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAZA"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvRaza"
+        android:layout_below="@+id/etNombreMas"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRaza"
+        android:id="@+id/etRaza"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CURP"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvCurp"
+        android:layout_below="@+id/etRaza"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCurp"
+        android:id="@+id/etCurp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:layout_below="@id/etCurp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnActualizar"
+        android:textSize="15dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar"
+        android:layout_below="@id/etCurp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnEliminar"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+        android:layout_below="@+id/btnEliminar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE PROPIETARIO"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvNombreProp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/etNombreProp"
+        android:layout_width="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombreMas"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELEFONO"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvTelefono"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etNombreMas"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/etTelefono"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRaza"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDAD"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvEdad"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etRaza"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvEdad"
+        android:id="@+id/etEdad"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "455553687168",
+    "project_id": "ladmu3veterinariasaucedogarcia",
+    "storage_bucket": "ladmu3veterinariasaucedogarcia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455553687168:android:ca069c8408b3b4c3289065",
+        "android_client_info": {
+          "package_name": "mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455553687168-8cnj2a6q4o0lq8lcajufemd4p8jb59uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPDeRQbEFlNl_2ErcQd8pL9ofCfmX6aZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455553687168-8cnj2a6q4o0lq8lcajufemd4p8jb59uc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis.ui.home.HomeFragment"
+        android:label="Insertar Propietario"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis.ui.gallery.GalleryFragment"
+        android:label="Buscar Propietario"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis.ui.slideshow.SlideshowFragment"
+        android:label="Eliminar Propietario"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_InsertarMascota"
+        android:name="mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis.ui.InsertarMascota.InsertarMascotaFragment"
+        android:label="Agregar mascota"
+        tools:layout="@layout/insertar_mascota_fragment" />
+
+    <fragment
+        android:id="@+id/nav_BuscarMascota"
+        android:name="mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis.ui.BuscarMascota.BuscarMascotaFragment"
+        android:label="Buscar Mascota"
+        tools:layout="@layout/buscar_mascota_fragment" />
+
+    <fragment
+        android:id="@+id/nav_EliminarMascota"
+        android:name="mx.tecnm.tepic.ladm_u3_practica2_firebaseveterinaria_saucedogarciajuanluis.ui.ActualizarMascota.ActualizarMascotaFragment"
+        android:label="Eliminar Masctoa"
+        tools:layout="@layout/actualizar_mascota_fragment"/>
+</navigation>

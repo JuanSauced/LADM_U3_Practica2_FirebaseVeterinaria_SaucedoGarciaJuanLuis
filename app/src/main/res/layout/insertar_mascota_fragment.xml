@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.InsertarMascota.InsertarMascotaFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE PROPIETARIO"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvNombreProp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombreProp"
+        android:id="@+id/etNombreProp"
+        android:layout_marginLeft="20dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar propietario"
+        android:layout_below="@id/etNombreProp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnBuscarProp"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvNombre"
+        android:layout_below="@+id/btnBuscarProp"
+        android:layout_marginTop="20dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombre"
+        android:id="@+id/etNombre"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAZA"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvRaza"
+        android:layout_below="@+id/etNombre"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRaza"
+        android:id="@+id/etRaza"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CURP"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvCurp"
+        android:layout_below="@+id/etRaza"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/getCurp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRaza"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/tvCurp"
+        android:text="Seleccione un propietario"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btnAgregarMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getCurp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="Agregar"
+        android:textSize="15dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+        android:layout_below="@+id/btnAgregarMascota"
+        />
+
+
+</RelativeLayout>

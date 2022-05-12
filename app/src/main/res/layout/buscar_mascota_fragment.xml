@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.BuscarMascota.BuscarMascotaFragment"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvNombre"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombre"
+        android:id="@+id/etNombre"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROPIETARIO CURP"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvPropietario"
+        android:layout_below="@+id/etNombre"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etPropietario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPropietario"
+        android:layout_marginLeft="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RAZA"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tvRaza"
+        android:layout_below="@+id/etPropietario"
+        android:layout_marginTop="20dp"/>
+
+
+    <EditText
+        android:id="@+id/etRaza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvRaza"
+        android:layout_marginLeft="20dp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:layout_below="@id/etRaza"
+        android:layout_marginTop="20dp"
+        android:id="@+id/btnBuscarMascota"
+        android:textSize="15dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lista"
+        android:layout_below="@+id/btnBuscarMascota"
+        />
+
+
+</RelativeLayout>
