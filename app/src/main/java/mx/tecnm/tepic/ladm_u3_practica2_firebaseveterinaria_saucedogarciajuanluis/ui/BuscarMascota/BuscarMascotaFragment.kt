@@ -35,36 +35,6 @@ class BuscarMascotaFragment : Fragment() {
         var idGlobal=""
         var listaID = ArrayList<String>()
         val baseRemota2= FirebaseFirestore.getInstance()
-
-        FirebaseFirestore.getInstance().collection("mascota")
-            .addSnapshotListener { query, error ->
-                if (error != null) {
-                    //ERROR
-                    AlertDialog.Builder(requireContext())
-                        .setMessage(error.message)
-                        .show()
-                    return@addSnapshotListener
-                }
-
-                listaID.clear()
-                val llenar = ArrayList<String>()
-                for (documento in query!!) {
-                    var cadena =
-                        "${documento.getString("nombre")} ${documento.getString("raza")}"
-                    llenar.add(cadena)
-                    listaID.add(documento.id)
-                }
-                try {
-                    binding.lista.adapter = ArrayAdapter<String>(requireContext(), android.R.layout.simple_list_item_1, llenar)
-                    binding.lista.setOnItemClickListener { adapterView, view, pos, l ->
-                        val idEl = listaID.get(pos)
-                        idGlobal = idEl
-                    }
-                } catch (err: NullPointerException) {
-                }
-            }
-
-
         binding.btnBuscarMascota.setOnClickListener{
             var select =baseRemota2.collection("mascota")
 

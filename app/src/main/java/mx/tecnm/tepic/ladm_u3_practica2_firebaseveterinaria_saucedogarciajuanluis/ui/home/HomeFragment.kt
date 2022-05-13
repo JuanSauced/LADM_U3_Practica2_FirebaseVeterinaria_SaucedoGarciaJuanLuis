@@ -36,24 +36,6 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        FirebaseFirestore.getInstance().collection("propietario")
-            .addSnapshotListener { query, error ->
-                if (error!=null){
-                    //ERROR
-                    AlertDialog.Builder(requireContext())
-                        .setMessage(error.message)
-                        .show()
-                    return@addSnapshotListener
-                }
-
-                val llenar = ArrayList<String>()
-                for (documento in query!!){
-                    var cadena = "${documento.getString("curp")} ${documento.getString("nombre")}  ${documento.getLong("edad")} años"
-                    llenar.add(cadena)
-                }
-
-                binding.lista.adapter = ArrayAdapter<String>(requireContext(), R.layout.simple_list_item_1, llenar)
-            }
 
         binding.btnAgregarPropietario.setOnClickListener {
             if(binding.etCurp.text.toString().equals("")||binding.etNombre.text.toString().equals("")
